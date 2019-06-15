@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "876874162556",
+    "firebase_url": "https://latihanandroidfinal.firebaseio.com",
+    "project_id": "latihanandroidfinal",
+    "storage_bucket": "latihanandroidfinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876874162556:android:87079e07d8554bd7",
+        "android_client_info": {
+          "package_name": "latihan.android.com.chatmu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876874162556-73n21913cnj7fs8b9oich3t3fpfi00ng.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "latihan.android.com.chatmu",
+            "certificate_hash": "7f0f10de115c01ffcbc95878d2388eaa13680a6f"
+          }
+        },
+        {
+          "client_id": "876874162556-1b8sdg8l95mt3tdeksfhtjjegb9hc9ad.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjc3iZdBDiYwODo3zW42foxQWsFrq-9dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876874162556-1b8sdg8l95mt3tdeksfhtjjegb9hc9ad.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">ChatMu</string>
     <string name="facebook_app_id">1398578176947813</string>
-    <string name="fb_login_protocol_scheme">12561957bfecddf724bea56346ad6f2f</string>
-    <string name="send_button_label">Send</string>
-    <string name="paragraph2">Paragraph paragraph Paragraph paragraphParagraph paragraphParagraph paragraphParagraph paragraphParagraph paragraphParagraph paragraph
-    </string>
-    <string name="textHint">Type a message</string>
-    <string name="user_name">Saputra kamandanu</string>
-    <string name="description">Description</string>
-    <string name="default_toolbar_title">@string/app_name</string>
+    <string name="fb_login_protocol_scheme">dea03756c10beb067f3d34b0339b3c2c</string>
+    <!--exit notification-->
+    <string name="press_again_exit_app">Press again to exit</string>
+
+    <string name="settings_file_name">com.app.sample.fchat.temp</string>
+    <string name="error_authetication_failed">Authentication failed.</string>
+    <string name="error_could_not_connect">Could not connect</string>
+    <string name="error_login_failed">Login failed</string>
 </resources>

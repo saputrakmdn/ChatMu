@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="background">#4286f4</color>
-    <color name="button">#01317f</color>
+    <color name="colorPrimary">#4287f5</color>
+    <color name="colorPrimaryDark">#5e8edb</color>
+    <color name="colorPrimaryLight">#d7ccc8</color>
+
+    <color name="colorAccent">#2ecc71</color>
+    <color name="colorAccentDark">#27ae60</color>
+    <color name="colorAccentLight">#2ecc71</color>
+    <color name="textColorSecondary">@color/grey_hard</color>
+
+    <color name="backGroundPrimary">@color/background_material_light</color>
+
+    <color name="dialogContentColor">#767676</color>
+
+    <color name="cardFeaturedContent">#E0E0E0</color>
+
+    <color name="grey_hard">#96989A</color>
+    <color name="grey_medium">#BDBFC1</color>
+    <color name="grey_soft">#F5F5F5</color>
+
+    <color name="grey_bg">#EBEFF0</color>
+    <color name="grey_text">#222D31</color>
+    <color name="me_chat_bg">#FFE0B2</color>
+
+    <color name="warning">#ff9933</color>
+    <color name="error">#8b0000</color>
+    <color name="info">#000080</color>
+    <color name="success">#008000</color>
 </resources>

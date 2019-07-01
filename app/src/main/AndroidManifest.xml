@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
           package="latihan.android.com.chatmu">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 
     <application
@@ -19,8 +22,58 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".VerifyMobile"/>
-        <activity android:name=".MainActivity"/>
+
+
+        <service
+                android:name=".services.NotificationService"
+                android:label="Poll Messages"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:exported="true">
+
+        </service>
+        <service
+                android:name=".services.FirebaseMsgServices"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+                android:name=".services.FirebaseInstncIDServices"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:host="fchat.firebase.google.com"
+                        android:pathPrefix="/message"
+                        android:scheme="http" />
+            </intent-filter>
+
+        </activity>
+        <activity
+                android:name=".activity.ChatDetailsActivity"
+                android:label="List" >
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".activity.MainActivity" />
+        </activity>
+        <activity
+                android:name=".activity.SelectFriendActivity"
+                android:label="Select Friend" >
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".activity.MainActivity" />
+        </activity>
         <meta-data android:name="com.facebook.sdk.ApplicationId"
                    android:value="@string/facebook_app_id"/>
         <activity android:name="com.facebook.FacebookActivity"

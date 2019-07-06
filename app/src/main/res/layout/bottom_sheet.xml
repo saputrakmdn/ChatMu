@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="5dp"
+              tools:context=".BottomSheet">
+
+    <TextView
+            android:text="Choose action..."
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <ImageView
+            android:id="@+id/send_image"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/picture"
+            android:drawablePadding="10dp"
+            android:text="Call"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+    <ImageView
+            android:id="@+id/send_location"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/placeholder"
+            android:drawablePadding="10dp"
+            android:text="Send message"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+
+</LinearLayout>

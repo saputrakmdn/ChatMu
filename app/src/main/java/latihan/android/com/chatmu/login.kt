@@ -30,6 +30,7 @@ import com.google.firebase.auth.FirebaseUser
 import latihan.android.com.chatmu.activity.ChatDetailsActivity
 import latihan.android.com.chatmu.activity.MainActivity
 import latihan.android.com.chatmu.data.SettingApi
+import latihan.android.com.chatmu.db.db_model.FriendModel
 import latihan.android.com.chatmu.utilities.Const
 import latihan.android.com.chatmu.utilities.Const.Companion.NODE_ID
 import latihan.android.com.chatmu.utilities.Const.Companion.NODE_NAME
@@ -52,6 +53,7 @@ class login: AppCompatActivity() {
     val USERS_CHILD = "users"
     var facebookUserId = ""
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         FacebookSdk.sdkInitialize(applicationContext)
@@ -68,6 +70,7 @@ class login: AppCompatActivity() {
         facebookBtn.registerCallback(callbackManager, object : FacebookCallback<LoginResult>{
             override fun onSuccess(result: LoginResult) {
                 handleFacebookAccessToken(result.accessToken)
+
             }
 
             override fun onCancel() {
@@ -132,6 +135,7 @@ class login: AppCompatActivity() {
                             ref.child("$userId/$NODE_PHOTO").setValue(photoUrl)
                             ref.child("$userId/$NODE_ID").setValue(userId)
                         }
+
                         val intent = Intent(this@login, MainActivity::class.java)
                         startActivity(intent)
 
@@ -145,6 +149,7 @@ class login: AppCompatActivity() {
         }
 
     }
+
 
 
     private fun validNo(no: String) {
